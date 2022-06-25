@@ -16,7 +16,7 @@ module.exports = {
       )
       .catch((err) => res.status(500).json(err));
   },
-  // create a new video
+  // create a new thought
   createThought(req, res) {
     Thought.create(req.body)
       .then((thought) => {
